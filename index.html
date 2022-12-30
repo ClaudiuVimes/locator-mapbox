@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/main.css" />
+    <script src="src/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="store-locator">
+        <h1 class="locator--title">Find your nearest store</h1>
+        <p class="locator--description">
+          Search for routes to a made up store using the map provided by the
+          Mapbox api.
+        </p>
+        <div class="locator--aside">
+          <h2 class="primary-color font_size__large font_weight__heavy">
+            <span class="text-lowercase">glo<sup>™</sup></span> НАМЕРИ МАГАЗИНИ
+          </h2>
+          <input type="search" placeholder="местоположение" />
+          <button class="locator--button-geo">
+            <i class="fas fa-map-marker-alt"></i> Geo Locație
+          </button>
+          <ul class="location_cards">
+            <li class="location_card">
+              <div class="location_descriptor">
+                <h3 class="primary-color font_size__medium font_weight__heavy">
+                  glo™ магазин
+                </h3>
+                <span
+                  class="primary-color font_size__medium font_weight__heavy"
+                >
+                  8.02 KM
+                </span>
+              </div>
+              <div class="location_adress">
+                <p class="primary-color font_size__medium font_weight__regular">
+                  Ballindamm 40 20095 Sofia
+                </p>
+              </div>
+              <button
+                class="button button_route button_orange white-color text-uppercase font_weight__bold"
+              >
+                Маршрут
+              </button>
+            </li>
+            <li class="location_card">
+              <div class="location_descriptor">
+                <h3 class="primary-color font_size__medium font_weight__heavy">
+                  glo™ STORE
+                </h3>
+                <span
+                  class="primary-color font_size__medium font_weight__heavy"
+                >
+                  8.02 KM
+                </span>
+              </div>
+              <div class="location_adress">
+                <p class="primary-color font_size__medium font_weight__regular">
+                  Ballindamm 40 20095 Sofia
+                </p>
+              </div>
+              <button
+                class="button button_route button_orange white-color text-uppercase font_weight__bold"
+              >
+                route
+              </button>
+            </li>
+            <li class="location_card">
+              <div class="location_descriptor">
+                <h3 class="primary-color font_size__medium font_weight__heavy">
+                  glo™ магазин
+                </h3>
+                <span
+                  class="primary-color font_size__medium font_weight__heavy"
+                >
+                  8.02 KM
+                </span>
+              </div>
+              <div class="location_adress">
+                <p class="primary-color font_size__medium font_weight__regular">
+                  Ballindamm 40 20095 Sofia
+                </p>
+              </div>
+              <button
+                class="button button_route button_orange white-color text-uppercase font_weight__bold"
+              >
+                route
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div id="map" class="locator--map">
+          <iframe
+            width="1080"
+            height="540"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Bulgaria&amp;t=&amp;z=7&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
